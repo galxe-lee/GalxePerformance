@@ -2,14 +2,6 @@ import { sleep, group } from "k6";
 import http from "k6/http";
 
 export const options = {
-  ext: {
-    loadimpact: {
-      distribution: {
-        "amazon:us:ashburn": { loadZone: "amazon:us:ashburn", percent: 100 },
-      },
-      apm: [],
-    },
-  },
   thresholds: {},
   scenarios: {
     Scenario_1: {

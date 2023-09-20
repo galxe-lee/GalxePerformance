@@ -2,11 +2,11 @@ import http from "k6/http";
 import { sleep } from "k6";
 
 export const options = {
-  vus: 10,
+  vus: 100,
   duration: "30s",
 };
 
 export default function () {
-  http.get("https://galxe.com");
+  http.get("https://stg.galxe.com");
   sleep(1);
 }
