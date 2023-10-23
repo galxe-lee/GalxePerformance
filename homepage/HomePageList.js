@@ -1,5 +1,3 @@
-// Creator: k6 Browser Recorder 0.6.2
-
 import { sleep, group } from "k6";
 import http from "k6/http";
 
